@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--   link a css personalizado   -->
+        <link rel="stylesheet" href="/styles/style.css">
+    
+        <!--   link a bootstrap   -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+        <!--   link a FontAwesome   -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>FunkoShop - Tu funko-tienda</title>
+    </head>
+<body>
+
+    <!-- inicio HEADER   -->
+    <header>
+        <nav>
+            <picture>
+                <a href="#">
+                    <img src="images/branding/logo_light_horizontal.svg" alt="FunkoShop">
+                </a>
+            </picture>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin HEADER   -->
+
+    <!--   aside / filtros   -->
+    <aside id="filtros">
+        <form action="">
+        <div>            
+            <label for="buscar">Buscar</label>
+            <input type="text" name="buscar" id="buscar" placeholder="item o categoría">
+        </div>
+        <div>
+            <label for="ordenar">Ordenar por</label>
+            <select name="ordenar" id="ordenar">
+                <option value="menorPrecio">menor precio</option>
+                <option value="mayorPrecio">mayor precio</option>
+                <option value="masNuevo">más nuevo</option>
+                <option value="masAntiguo">más antiguo</option>
+                <option value="masVendido">más vendido</option>
+            </select>
+        </div>
+        <div>
+            <label for="precio">Precio</label>
+            <br>
+            <label for="precioMin">Min</label>
+            <input type="number" id="precioMin" name="precioMin" placeholder="0">
+            <span> - </span>
+            <label for="precioMax">Max</label>
+            <input type="number" id="precioMax" name="precioMax" placeholder="0">
+            </div>
+        <div>
+            <label for="filtrar">Filtrar</label> <br>
+            <input type="checkbox" id="nuevos" name="nuevos" value="nuevos">
+            <label for="nuevos"> nuevos</label><br>
+            <input type="checkbox" id="ofertas" name="ofertas" value="ofertas">
+            <label for="ofertas"> ofertas</label><br>
+            <input type="checkbox" id="especial" name="especial" value="especial">
+            <label for="especial"> Edición especial</label><br>
+            <input type="checkbox" id="favoritos" name="favoritos" value="favoritos">
+            <label for="favoritos"> favoritos</label><br>
+        </div>
+    </form>
+    </aside>
+    <!--  fin aside / filtros   -->
+
+    <main>
+    <div class="producto">
+        <div class="productotop">
+            <span>NUEVO</span>
+            <picture>
+                <img src="/images/star-wars/trooper-1.webp" alt="">
+            </picture>
+        </div>
+        <div class="productobottom">
+            <p>STAR WARS</p>
+            <h4>STORMTROOPER LIGHTSABER</h4>
+            <p>$ 1799,99.-</p>
+            <p>3 CUOTAS SIN INTERÉS</p>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="productotop">
+            <span>NUEVO</span>
+            <picture>
+                <img src="/images/pokemon/pidgeotto-1.webp" alt="">
+            </picture>
+        </div>
+        <div class="productobottom">
+            <p>POKEMON</p>
+            <h4>PIDGEOTTO</h4>
+            <p>$ 1799,99.-</p>
+            <p>3 CUOTAS SIN INTERÉS</p>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="productotop">
+            <span>NUEVO</span>
+            <picture>
+                <img src="images/harry-potter/luna-1.webp" alt="">
+            </picture>
+        </div>
+        <div class="productobottom">
+            <p>HARRY POTTER</p>
+            <h4>LUNA LOVEGOOD LION MASK</h4>
+            <p>$ 1799,99.-</p>
+            <p>3 CUOTAS SIN INTERÉS</p>
+        </div>
+    </div>
+    <div id="pagination">
+        <p> <<<<< pagination >>>>> </p>
+    </div>
+    </main>
+
+
+
+    
+
+
+            <!--   footer   -->
+            <footer>
+                <div id="footer-left">
+                    <nav>
+                        <ul>
+                            <li>Shop</li>
+                            <li>Registrarse</li>
+                            <li>Login</li>
+                            <li>Contacto</li>
+                        </ul>
+                    </nav>
+    
+                </div>
+                <div id="footer-right">
+                    <picture>
+                        <img src="images/branding/isotype.svg" alt="">
+                    </picture>
+                </div>
+                <div id="footer-bottom">
+                    <p>All rights reserved 2022 - Funkoshop &copy;</p>
+                </div>
+    
+            </footer>
+            <!--   fin footer   -->
+
+
+     <!-- script bootstrap js   -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
