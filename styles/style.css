@@ -360,6 +360,80 @@ header {
 }
 
 
+/*   ASIDE - filter (shop)   */
+
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-start;
+    padding: var(--spacing-16) 0;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-28);
+    gap: var(--spacing-36);
+}
+
+.aside__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    text-transform: uppercase;
+}
+
+.aside__form label {
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    
+    
+}
+
+.precio-min-max {
+    display: flex;
+}
+
+.precio-min-max label,
+.precio-min-max input {
+    font-size: var(--font-small);
+    width: 15%;
+    justify-content: space-evenly;
+}
+
+.precio-min-max span {
+    font-size: var(--font-small);
+    padding: 0 .5rem;
+}
+
+.aside__form__filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside__form__filters label {
+    flex-basis: 90%;
+    gap: var(--spacing-12);
+    padding: 0 var(--spacing-8);
+    align-self: center;
+    font-size: var(--font-small);
+
+}
+
+/*   shop   */
+
+.shop-list__items {
+    display: flex;
+    gap: var(--spacing-24);
+    flex-wrap: wrap;
+}
+
+.shop-list__item {
+    flex-basis: 30%;
+}
 
 
 /*   ANIMATIONS   */
@@ -372,3 +446,5 @@ header {
         opacity: 1;
     }
 }
+
+
